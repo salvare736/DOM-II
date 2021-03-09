@@ -1,6 +1,5 @@
 // Your code goes here
 
-
 // Prevents the default behaviour of the nav links
 Array.from(document.links).forEach(function(link) {
     link.addEventListener('click', function(event) {
@@ -26,9 +25,9 @@ let footer3 = footer[2];
 let footer1Button = footer1.querySelector('.btn');
 let footer2Button = footer2.querySelector('.btn');
 let footer3Button = footer3.querySelector('.btn');
-let footer1Header = footer1.querySelector('h4');
-let footer2Header = footer2.querySelector('h4');
-let footer3Header = footer3.querySelector('h4');
+let footer1Heading = footer1.querySelector('h4');
+let footer2Heading = footer2.querySelector('h4');
+let footer3Heading = footer3.querySelector('h4');
 let footer1Paragraph = footer1.querySelector('p');
 let footer2Paragraph = footer2.querySelector('p');
 let footer3Paragraph = footer3.querySelector('p');
@@ -55,5 +54,23 @@ document.addEventListener('keydown', function(event){
     if(event.key === 'Escape'){
         console.log('There is no escape! Mwahahaha!');
         window.alert('There is no escape! Mwahahaha!');
+    }
+});
+
+// Temporarily alters the color and font-weight of the leftmost heading of the footer when you mouseover
+footer1Heading.addEventListener('mouseenter', function(event){
+    event.target.style.color = 'purple';
+    event.target.style.fontWeight = 'bold';
+    setTimeout(function(){
+        event.target.style.color = '';
+        event.target.style.fontWeight = '';
+    }, 1500);
+}, false);
+
+// Logs & alerts when the document become visible
+document.addEventListener('visibilitychange', function(event){
+    if (document.visibilityState === 'visible'){
+        console.log('Welcome back!');
+        window.alert('Welcome back!');
     }
 });
