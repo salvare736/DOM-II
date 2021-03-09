@@ -75,8 +75,24 @@ document.addEventListener('visibilitychange', function(event){
     }
 });
 
-// Logs when something is copied from the page
+// Logs & alerts when something is copied from the page
 document.addEventListener('copy', function(event){
     console.log('Copy action initiated!');
     window.alert('Copy action initiated!');
 });
+
+// Logs & alerts when something is cut from the page
+document.addEventListener('cut', function(event){
+    console.log('Cut action initiated!');
+    window.alert('Cut action initiated!');
+});
+
+// There is some selectable text in an input box below the middle heading in the footer section
+function logSelection(event) {
+    let log = document.getElementById('log');
+    let selection = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
+    log.textContent = `You selected "${selection}"!`;
+}
+let input = document.querySelector('input');
+input.addEventListener('select', logSelection);
+
