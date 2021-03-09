@@ -15,6 +15,7 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 * [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 * [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 * [ ] Push commits: git push origin `<firstName-lastName>`.
+   X
 
 #### Launch the project with npm
 
@@ -22,25 +23,30 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 * [ ] Run `npm install` to download any dependencies listed in the `package.json` file.
 * [ ] Run `npm start` to compile your project and launch a development server.
 * [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command.
+   X
 
 ### Task 2: Create listeners for 10 types of events
 
 * [ ] Using your [index.js file](js/index.js), create [event listeners](https://developer.mozilla.org/en-US/docs/Web/Events) of at least 10 _different_ types. You must Use your creativity to make the Fun Bus site more interactive. For example you could change colors, animate objects, remove objects, etc. Here are some event types you could try to use:
-  * `mouseover`
-  * `keydown`
-  * `wheel`
-  * `load`
-  * `focus`
+  * `mouseover` X
+  * `keydown` X
+  * `wheel` X
+  * `load` X
+  * `focus` X
+  * `blur` X
   * `resize`
   * `scroll`
-  * `select`
-  * `dblclick`
+  * `select` X
+  * `dblclick` X
   * `drag / drop`
+  * `visibilitychange` X
+  * `copy` X
+  * `cut` X
 
 Note: Drag and drop is a bit more advanced than the others: it's not actually a single type of event but several types that need to work together.
 
-* [ ] Nest two similar events somewhere in the site and prevent the event propagation properly. Remember not all event types bubble.
-* [ ] Stop the navigation items from refreshing the page by using `preventDefault()`
+* [X] Nest two similar events somewhere in the site and prevent the event propagation properly. Remember not all event types bubble.
+* [X] Stop the navigation items from refreshing the page by using `preventDefault()`
 
 ### Task 3: Stretch
 
