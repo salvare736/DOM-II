@@ -96,3 +96,10 @@ function logSelection(event) {
 let input = document.querySelector('input');
 input.addEventListener('select', logSelection);
 
+// The input box in the above example changes color and reverts back to normal upon focusing and blurring
+input.addEventListener('focus', function(event){
+    event.target.style.background = 'pink';
+});
+input.addEventListener('blur', function(event){
+    event.target.style.background = '';
+});
