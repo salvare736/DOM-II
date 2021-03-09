@@ -74,3 +74,9 @@ document.addEventListener('visibilitychange', function(event){
         window.alert('Welcome back!');
     }
 });
+
+// Logs when something is copied from the page
+document.addEventListener('copy', function(event){
+    console.log('Copy action initiated!');
+    window.alert('Copy action initiated!');
+});
