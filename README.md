@@ -23,6 +23,7 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 * [ ] Run `npm install` to download any dependencies listed in the `package.json` file.
 * [ ] Run `npm start` to compile your project and launch a development server.
 * [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command.
+   X
 
 ### Task 2: Create listeners for 10 types of events
 
@@ -40,8 +41,8 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 
 Note: Drag and drop is a bit more advanced than the others: it's not actually a single type of event but several types that need to work together.
 
-* [ ] Nest two similar events somewhere in the site and prevent the event propagation properly. Remember not all event types bubble.
-* [ ] Stop the navigation items from refreshing the page by using `preventDefault()`
+* [X] Nest two similar events somewhere in the site and prevent the event propagation properly. Remember not all event types bubble.
+* [X] Stop the navigation items from refreshing the page by using `preventDefault()`
 
 ### Task 3: Stretch
 
